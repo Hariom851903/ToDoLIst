@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1d276b;
+    color: #333;
+  }
+  .container {
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9fbe7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  input[type="text"],
+  input[type="datetime-local"],
+  input[type="submit"],
+  .edit-btn,
+  .delete-btn {
+      padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  background-color: #ed990b;
+  color: #333;
+  cursor: pointer;
+  }
+  input[type="text"],
+  input[type="datetime-local"] {
+    flex: 1;
+  }
+  input[type="submit"]:hover,
+  .edit-btn:hover,
+  .delete-btn:hover {
+    background-color: #45a049;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .time {
+    font-size: 15px;
+    color: #777;
+  }
+  .complete-checkbox {
+    margin-right: 10px;
+  }
+
+  /* Responsive Layout */
+  @media only screen and (max-width: 300px) {
+      form {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+ }
+    .container {
+      padding: 10px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    input[type="text"],
+    input[type="datetime-local"],
+    input[type="submit"],
+    .edit-btn,
+    .delete-btn {
+      padding: 8px;
+      font-size: 14px;
+    }
+    li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+}
+.textconainter {
+  display: flex;
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+  width: 100%;
+}
+  }
+
+  @media only screen and (min-width: 301px) and (max-width: 400px) {
+      form {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+  row-gap: 10px;
+ }
+    input[type="text"],
+    input[type="datetime-local"],
+    input[type="submit"],
+    .edit-btn,
+    .delete-btn {
+      padding: 8px;
+      font-size: 14px;
+    }
+    li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+}
+.textconainter {
+  display: flex;
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+  width: 100%;
+}
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 500px) {
+    input[type="text"],
+    input[type="datetime-local"],
+    input[type="submit"],
+    .edit-btn,
+    .delete-btn {
+      padding: 10px;
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (min-width: 501px) and (max-width: 800px) {
+    input[type="text"],
+    input[type="datetime-local"],
+    input[type="submit"],
+    .edit-btn,
+    .delete-btn {
+      padding: 12px;
+      font-size: 18px;
+    }
+  }
+
+  @media only screen and (min-width: 801px) and (max-width: 1200px) {
+    input[type="text"],
+    input[type="datetime-local"],
+    input[type="submit"],
+    .edit-btn,
+    .delete-btn {
+      padding: 14px;
+      font-size: 20px;
+    }
+  }
